@@ -10,7 +10,7 @@ const Error = () => {
   return (
     <div className={clasess.errorPage}>
       <img src={ErrorLogo} alt="Error Logo" />
-      <h3>Click the button to go to Home page</h3>
+      <h3>Click the button to go to Home page.</h3>
       <br />
       <button onClick={handleHomeClick}>Home</button>
     </div>
