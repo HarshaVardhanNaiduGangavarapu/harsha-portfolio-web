@@ -1,16 +1,10 @@
-const DownloadFile = async (url, fileName) => {
-  const fileResponse = await fetch(url, {
-    mode: "no-cors",
-  });
-  const fileBlob = await fileResponse.blob();
-  const fileURL = URL.createObjectURL(fileBlob);
+import { ref, getDownloadURL } from "firebase/storage";
+import { storage } from "./firebase";
 
-  const link = document.createElement("a");
-  link.href = fileURL;
-  link.setAttribute("download", fileName + ".pdf");
-  document.body.appendChild(link);
-  link.click();
-  link.parentNode.removeChild(link);
+const DownloadFile = async (fileName) => {
+  const fileRef = ref(storage, fileName);
+  const downloadURL = await getDownloadURL(fileRef);
+  window.open(downloadURL, `_blank`);
 };
 
 export default DownloadFile;
