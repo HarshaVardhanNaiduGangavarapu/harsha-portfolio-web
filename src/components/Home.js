@@ -3,6 +3,7 @@ import profileImage from "../resources/ProfileImage.png";
 import LinkedInButton from "./buttons/LinkedInButton";
 import GitHubButton from "./buttons/GitHubButton";
 import InstaButton from "./buttons/InstaButton";
+import DownloadResume from "./buttons/DownloadResume";
 
 const Home = () => {
   return (
@@ -15,6 +16,9 @@ const Home = () => {
         <LinkedInButton />
         <GitHubButton />
         <InstaButton />
+        <br />
+        <br />
+        <DownloadResume />
       </div>
       <div className={classes.rightPane}>
         <div className={classes.hello}>
