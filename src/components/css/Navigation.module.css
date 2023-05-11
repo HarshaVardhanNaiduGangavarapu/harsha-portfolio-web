@@ -1,0 +1,68 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 98%;
+  height: 5%;
+  background-color: black;
+  color: white;
+  padding: 22px;
+  z-index: 1;
+}
+
+main {
+  position: fixed;
+  top: 85px;
+  left: 0;
+  background-color: whitesmoke;
+  color: #222; /* content text color */
+  height: 88vh; /* Set the height to be 100% of the viewport height */
+  width: 100%; /* Set the width to be 100% of the parent element */
+  min-height: 100%; /* Set the minimum height to be 100% of the viewport height */
+}
+
+nav {
+  font-size: 18px;
+  /*border: 2px solid white; /* border */
+  border-radius: 5px; /* rounded corners */
+  display: flex; /* display items as a flexible container */
+  justify-content: flex-end; /* space items out evenly */
+  align-items: right; /* vertically align items in center */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  padding: 10px;
+}
+
+nav a {
+  color: #ccc; /* menu item color */
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+}

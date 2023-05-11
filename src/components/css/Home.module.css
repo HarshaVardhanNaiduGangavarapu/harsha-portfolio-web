@@ -1,6 +1,6 @@
 .splitScreen {
   display: flex;
-  align-items: center;
+  height: 100vh;
 }
 
 .splitScreen .leftPane,
@@ -10,7 +10,6 @@
 }
 
 .splitScreen .leftPane {
-  border-right: 1px solid #fff;
   box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -18,11 +17,41 @@
   padding-left: 50px;
 }
 
+.profileImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .profileImage img {
-  width: 150px;
-  height: 150px;
+  width: 450px;
+  height: 450px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.hello {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 100px;
+  color: black;
+  padding-right: 50px;
+}
+
+.intro {
+  @extend .hello;
+  font-size: 28px;
+}
+
+.lastName {
+  @extend .intro;
+  color: orange;
+}
+
+.firstName {
+  @extend .intro;
+  color: #058ad2;
 }
