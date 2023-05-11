@@ -20,6 +20,11 @@
   transform: translate(-50%, -50%);
   z-index: 1;
   transition: transorm 0.5s;
+  background-color: black;
+}
+
+.errorPage button:hover {
+  background-color: #434343;
 }
 
 .errorPage h3 {
