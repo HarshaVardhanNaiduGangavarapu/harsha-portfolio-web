@@ -3,7 +3,9 @@ import profileImage from "../resources/ProfileImage.png";
 import LinkedInButton from "./buttons/LinkedInButton";
 import GitHubButton from "./buttons/GitHubButton";
 import InstaButton from "./buttons/InstaButton";
-import DownloadResume from "./buttons/DownloadResume";
+import ResumeButton from "./buttons/ResumeButton";
+import CoverLetterButton from "./buttons/CoverLetterButton";
+import DownArrow from "../resources/down-arrow-circle.svg";
 
 const Home = () => {
   return (
@@ -13,12 +15,26 @@ const Home = () => {
           <img src={profileImage} alt="profile pic" />
         </div>
         <br />
-        <LinkedInButton />
-        <GitHubButton />
-        <InstaButton />
+        <br />
+        <div className={classes.AboutMe}>
+          <span className={classes.buttonAboutMe}>
+            About Me
+            <img
+              src={DownArrow}
+              alt="Down Arrow"
+              className={classes.imgAboutMe}
+            />
+          </span>
+        </div>
         <br />
         <br />
-        <DownloadResume />
+        <div className={classes.AboutMe}>
+          <LinkedInButton />
+          <GitHubButton />
+          <InstaButton />
+          <ResumeButton />
+          <CoverLetterButton />
+        </div>
       </div>
       <div className={classes.rightPane}>
         <div className={classes.hello}>

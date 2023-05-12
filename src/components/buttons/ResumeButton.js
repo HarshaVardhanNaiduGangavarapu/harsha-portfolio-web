@@ -1,7 +1,7 @@
 import classes from "./css/Resume.module.css";
 import DownloadFile from "../../util/fileDownload";
 
-const DownloadResume = () => {
+const ResumeButton = () => {
   const fileName = "HarshaGangavarapu_Resume.pdf";
   return (
     <button
@@ -13,4 +13,4 @@ const DownloadResume = () => {
   );
 };
 
-export default DownloadResume;
+export default ResumeButton;

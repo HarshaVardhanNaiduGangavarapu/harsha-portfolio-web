@@ -29,7 +29,13 @@
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  /*box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.profileImage img:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
 }
 
 .hello {
@@ -54,4 +60,33 @@
 .firstName {
   @extend .intro;
   color: #058ad2;
+}
+
+.buttonAboutMe {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(254, 155, 49);
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 20px;
+  padding: 12px 10px;
+  text-decoration: none;
+  margin-right: 10px; /* add margin to the right of the first button */
+  box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.imgAboutMe {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  margin-left: 8px;
+  fill: #fff;
+}
+
+.AboutMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

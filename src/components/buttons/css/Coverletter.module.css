@@ -1,0 +1,20 @@
+.coverletterButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 11px 10px;
+  text-decoration: none;
+  margin-right: 10px; /* add margin to the right of the first button */
+  margin-left: 10px;
+  transition: transform 0.5s;
+}
+
+.coverletterButton:hover {
+  transform: scale(1.1);
+}
