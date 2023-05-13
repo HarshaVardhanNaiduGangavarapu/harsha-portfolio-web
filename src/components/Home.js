@@ -9,41 +9,40 @@ import DownArrow from "../resources/down-arrow-circle.svg";
 
 const Home = () => {
   return (
-    <div className={classes.splitScreen}>
-      <div className={classes.leftPane}>
-        <div className={classes.profileImage}>
-          <img src={profileImage} alt="profile pic" />
+    <div className={classes.bgImg}>
+      <div className={classes.splitScreen}>
+        <div className={classes.leftPane}>
+          <div className={classes.profileImage}>
+            <img src={profileImage} alt="profile pic" />
+          </div>
+          <br />
+          <br />
+          <div className={classes.AboutMe}>
+            <span className={classes.buttonAboutMe}>
+              About Me
+              <img
+                src={DownArrow}
+                alt="Down Arrow"
+                className={classes.imgAboutMe}
+              />
+            </span>
+          </div>
+          <br />
+          <br />
+          <div className={classes.AboutMe}>
+            <LinkedInButton />
+            <GitHubButton />
+            <InstaButton />
+            <ResumeButton />
+            <CoverLetterButton />
+          </div>
         </div>
-        <br />
-        <br />
-        <div className={classes.AboutMe}>
-          <span className={classes.buttonAboutMe}>
-            About Me
-            <img
-              src={DownArrow}
-              alt="Down Arrow"
-              className={classes.imgAboutMe}
-            />
-          </span>
-        </div>
-        <br />
-        <br />
-        <div className={classes.AboutMe}>
-          <LinkedInButton />
-          <GitHubButton />
-          <InstaButton />
-          <ResumeButton />
-          <CoverLetterButton />
-        </div>
-      </div>
-      <div className={classes.rightPane}>
-        <div className={classes.hello}>
-          Hello There, <br /> I'm{" "}
-          <span className={classes.firstName}>Harsha</span>{" "}
-          <span className={classes.lastName}>Gangavarapu</span>! <br />
-          <span className={classes.intro}>
-            Welcome to my portfolio website.
-          </span>
+        <div className={classes.rightPane}>
+          <div className={classes.hello}>
+            Hello There, <br /> I'm{" "}
+            <span className={classes.firstName}>Harsha</span>{" "}
+            <span className={classes.lastName}>Gangavarapu</span>!
+          </div>
         </div>
       </div>
     </div>
