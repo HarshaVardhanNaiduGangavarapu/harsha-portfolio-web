@@ -38,6 +38,9 @@ const About = () => {
           improve my skills. Overall, I am an enthusiastic and dedicated
           professional who is committed to delivering high-quality solutions and
           fostering a collaborative and innovative work environment.
+          <span className={classes.newLine}>
+            <br />
+          </span>
         </h3>
       </div>
     </div>

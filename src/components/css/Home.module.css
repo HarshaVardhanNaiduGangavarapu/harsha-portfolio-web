@@ -1,20 +1,35 @@
 .splitScreen {
   display: flex;
   height: 100vh;
+  flex-direction: column;
+}
+.splitScreen .leftPane {
+  width: 100%;
+  overflow: auto;
+  padding-bottom: 10px;
+}
+.splitScreen .rightPane {
+  width: 100%;
+  overflow: auto;
+  padding-top: 50px;
 }
 
-.splitScreen .leftPane,
-.splitScreen .rightPane {
-  width: 50%;
-  padding: 30px;
+.profileImage img {
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.profileImage img:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
 .splitScreen .leftPane {
   box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.1);
-}
-
-.splitScreen .rightPane {
-  padding-left: 50px;
 }
 
 .profileImage {
@@ -23,38 +38,24 @@
   align-items: center;
 }
 
-.profileImage img {
-  width: 450px;
-  height: 450px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  transition: box-shadow 0.3s ease-in-out;
-}
-
-.profileImage img:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-}
-
 .hello {
-  font-size: 48px;
+  font-size: 24px;
   font-weight: bold;
-  text-align: left;
-  margin-top: 100px;
+  text-align: center;
+  margin-top: 50px;
   color: black;
-  padding-top: 60px;
-  font-size: 36px;
+  padding-top: 30px;
+  font-size: 18px;
 }
 
 .lastName {
   @extend .intro;
-  color: white;
+  color: rgb(65, 105, 225);
 }
 
 .firstName {
   @extend .intro;
-  color: white;
+  color: rgb(65, 105, 225);
 }
 
 .buttonAboutMe {
@@ -64,19 +65,19 @@
   background-color: rgb(254, 155, 49);
   color: #fff;
   font-weight: bold;
-  font-size: 16px;
-  border-radius: 20px;
-  padding: 12px 10px;
+  font-size: 8px;
+  border-radius: 10px;
+  padding: 6px 5px;
   text-decoration: none;
-  margin-right: 10px;
-  box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
+  margin-right: 5px;
+  box-shadow: 0 2.5px 1px rgba(0, 0, 0, 0.2);
 }
 
 .imgAboutMe {
-  width: 24px;
-  height: 24px;
-  margin-right: 8px;
-  margin-left: 8px;
+  width: 12px;
+  height: 12px;
+  margin-right: 4px;
+  margin-left: 4px;
   fill: #fff;
 }
 
@@ -86,9 +87,61 @@
   align-items: center;
 }
 
-.bgImg {
-  background-image: url("../../resources/unsplash.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+@media (min-width: 768px) {
+  .splitScreen {
+    flex-direction: row;
+  }
+
+  .splitScreen .leftPane,
+  .splitScreen .rightPane {
+    width: 50%;
+    padding: 30px;
+  }
+
+  .profileImage img {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  .profileImage img:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  }
+
+  .hello {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+    color: black;
+    padding-top: 60px;
+    font-size: 36px;
+  }
+
+  .buttonAboutMe {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(254, 155, 49);
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 12px 10px;
+    text-decoration: none;
+    margin-right: 10px;
+    box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .imgAboutMe {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    margin-left: 8px;
+    fill: #fff;
+  }
 }

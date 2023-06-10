@@ -5,12 +5,12 @@
   background-color: rgb(241, 234, 234);
   color: #fff;
   font-weight: bold;
-  font-size: 16px;
-  border-radius: 4px;
-  padding: 12px 10px;
+  font-size: 8px;
+  border-radius: 2px;
+  padding: 6px 5px;
   text-decoration: none;
-  margin-right: 10px; /* add margin to the right of the first button */
-  margin-left: 10px;
+  margin-right: 5px; /* add margin to the right of the first button */
+  margin-left: 5px;
   transition: transform 0.5s;
 }
 
@@ -21,9 +21,41 @@
 }
 
 .buttonInstaImg {
-  width: 24px;
-  height: 24px;
-  margin-right: 8px;
-  margin-left: 8px;
+  width: 12px;
+  height: 12px;
+  margin-right: 4px;
+  margin-left: 4px;
   fill: #fff;
+}
+
+@media (min-width: 768px) {
+  .buttonInsta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(241, 234, 234);
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 12px 10px;
+    text-decoration: none;
+    margin-right: 10px; /* add margin to the right of the first button */
+    margin-left: 10px;
+    transition: transform 0.5s;
+  }
+
+  .buttonInsta:hover {
+    background-color: rgb(244, 192, 192);
+    border-color: #0c0c0c;
+    transform: scale(1.1);
+  }
+
+  .buttonInstaImg {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    margin-left: 8px;
+    fill: #fff;
+  }
 }

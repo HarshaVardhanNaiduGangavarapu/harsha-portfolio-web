@@ -12,9 +12,12 @@ const Home = () => {
     <div className={classes.bgImg}>
       <div className={classes.splitScreen}>
         <div className={classes.leftPane}>
-          <div className={classes.profileImage}>
-            <img src={profileImage} alt="profile pic" />
+          <div className={classes.hello}>
+            Hello There, <br /> I'm{" "}
+            <span className={classes.firstName}>Harsha</span>{" "}
+            <span className={classes.lastName}>Gangavarapu</span>!
           </div>
+
           <br />
           <br />
           <div className={classes.AboutMe}>
@@ -38,10 +41,8 @@ const Home = () => {
           </div>
         </div>
         <div className={classes.rightPane}>
-          <div className={classes.hello}>
-            Hello There, <br /> I'm{" "}
-            <span className={classes.firstName}>Harsha</span>{" "}
-            <span className={classes.lastName}>Gangavarapu</span>!
+          <div className={classes.profileImage}>
+            <img src={profileImage} alt="profile pic" />
           </div>
         </div>
       </div>
