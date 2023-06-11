@@ -1,5 +1,5 @@
 import classes from "./css/Home.module.css";
-import profileImage from "../resources/ProfileImage.png";
+import profileImage from "../resources/HomePic.png";
 import LinkedInButton from "./buttons/LinkedInButton";
 import GitHubButton from "./buttons/GitHubButton";
 import InstaButton from "./buttons/InstaButton";

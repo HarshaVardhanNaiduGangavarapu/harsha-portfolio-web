@@ -15,17 +15,10 @@
 }
 
 .profileImage img {
-  width: 225px;
-  height: 225px;
-  border-radius: 50%;
+  width: 50%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  transition: box-shadow 0.3s ease-in-out;
-}
-
-.profileImage img:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
 .splitScreen .leftPane {
@@ -99,17 +92,10 @@
   }
 
   .profileImage img {
-    width: 450px;
-    height: 450px;
-    border-radius: 50%;
+    width: 50%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transition: box-shadow 0.3s ease-in-out;
-  }
-
-  .profileImage img:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
   }
 
   .hello {
