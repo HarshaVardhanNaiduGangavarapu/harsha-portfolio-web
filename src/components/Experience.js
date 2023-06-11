@@ -4,7 +4,7 @@ import classes from "./css/Experience.module.css";
 import BB from "../resources/BB.jpg";
 import UiPath from "../resources/UiPath.jpg";
 import TCS from "../resources/TCS.jpg";
-import profileImage from "../resources/ProfileImage.png";
+import Polycom from "../resources/Polycom.jpg";
 import BBLogo from "../resources/BB-logo.svg";
 import UiPathLogo from "../resources/UiPath-logo.svg";
 import TCSLogo from "../resources/TCS-logo.svg";
@@ -81,7 +81,7 @@ const experiencesList = [
     location: "Hyderabad, India",
     duration: "Oct 2016 - Mar 2017",
     experience: "Experience",
-    img: profileImage,
+    img: Polycom,
     imgAlt: "Polycom",
     logo: PolycomLogo,
     logoAlt: "Polycom Logo",
@@ -105,12 +105,10 @@ const Experience = () => {
   return (
     <div className={classes.splitScreen}>
       <div className={classes.leftPane}>
-        <div className={classes.slideImg}>
-          <img
-            src={experiencesList[activeSlide].img}
-            alt={experiencesList[activeSlide].imgAlt}
-          />
-        </div>
+        <img
+          src={experiencesList[activeSlide].img}
+          alt={experiencesList[activeSlide].imgAlt}
+        />
       </div>
       <div className={classes.rightPane}>
         <Slide
