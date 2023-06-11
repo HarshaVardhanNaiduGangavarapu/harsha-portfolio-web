@@ -2,7 +2,7 @@ import classes from "./css/Coverletter.module.css";
 import DownloadFile from "../../util/fileDownload";
 
 const CoverLetterButton = () => {
-  const fileName = "CoverLetter_HarshaGangavarapu.pdf";
+  const fileName = "HarshaGangavarapu_CoverLetter.pdf";
   return (
     <button
       onClick={async () => await DownloadFile(fileName)}

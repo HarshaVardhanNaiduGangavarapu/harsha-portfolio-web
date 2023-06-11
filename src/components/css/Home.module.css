@@ -80,6 +80,16 @@
   align-items: center;
 }
 
+.lastName {
+  @extend .intro;
+  color: #0072b1;
+}
+
+.firstName {
+  @extend .intro;
+  color: rgb(178 37 37);
+}
+
 @media (min-width: 768px) {
   .splitScreen {
     flex-direction: row;

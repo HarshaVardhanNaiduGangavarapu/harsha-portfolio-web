@@ -16,19 +16,18 @@ main {
   top: 85px;
   left: 0;
   background-color: whitesmoke;
-  color: #222; /* content text color */
-  height: 88vh; /* Set the height to be 100% of the viewport height */
-  width: 100%; /* Set the width to be 100% of the parent element */
-  min-height: 100%; /* Set the minimum height to be 100% of the viewport height */
+  color: #222;
+  height: 88vh;
+  width: 100%;
+  min-height: 100%;
 }
 
 nav {
   font-size: 18px;
-  /*border: 2px solid white; /* border */
-  border-radius: 5px; /* rounded corners */
-  display: flex; /* display items as a flexible container */
-  justify-content: flex-end; /* space items out evenly */
-  align-items: right; /* vertically align items in center */
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: right;
 }
 
 nav ul {
@@ -41,8 +40,19 @@ nav li {
   padding: 10px;
 }
 
+nav a.selected::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
 nav a {
-  color: #ccc; /* menu item color */
+  color: #ccc;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
@@ -66,4 +76,9 @@ button {
 
 button:hover {
   background-color: #555;
+}
+
+.activeButton {
+  text-decoration: underline;
+  text-decoration-color: whitesmoke;
 }
