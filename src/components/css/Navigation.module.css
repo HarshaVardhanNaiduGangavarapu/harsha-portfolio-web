@@ -82,3 +82,26 @@ button:hover {
   text-decoration: underline;
   text-decoration-color: whitesmoke;
 }
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.logo img {
+  width: 50%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    display: flex;
+    align-items: left;
+  }
+
+  .logo img {
+    width: 25%;
+    height: auto;
+  }
+}

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import classes from "./css/Navigation.module.css";
 import { useState } from "react";
+import PortfolioLogo from "../resources/logo.jpg";
 
 const Navigation = () => {
   const [activeItem, setActiveItem] = useState("Home");
@@ -10,6 +11,9 @@ const Navigation = () => {
   return (
     <header className={classes.header}>
       <nav className={classes.nav}>
+        <div className={classes.logo}>
+          <img src={PortfolioLogo} alt="Logo" />
+        </div>
         <ul>
           <li>
             <button
