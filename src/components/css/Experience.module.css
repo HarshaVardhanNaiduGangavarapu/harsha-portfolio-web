@@ -186,7 +186,44 @@ button {
   flex-grow: 1;
 }
 
+.spinner {
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #1089f2;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  animation: spinner 0.8s linear infinite;
+
+  position: absolute;
+  bottom: 14%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @media (min-width: 768px) {
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #1089f2;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spinner 0.8s linear infinite;
+
+    position: absolute;
+    bottom: 14%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .splitScreen {
     display: flex;
     flex-direction: row;

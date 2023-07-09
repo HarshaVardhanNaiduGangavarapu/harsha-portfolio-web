@@ -97,17 +97,24 @@ const experiencesList = [
 
 const Experience = () => {
   const [activeSlide, setActiveSlide] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
 
   const handleSlideChange = (slideIndex) => {
     setActiveSlide(slideIndex);
   };
 
+  const handleImageLoading = () => {
+    setIsLoading(false);
+  };
+
   return (
     <div className={classes.splitScreen}>
       <div className={classes.leftPane}>
+        {isLoading && <div className={classes.spinner}></div>}
         <img
           src={experiencesList[activeSlide].img}
           alt={experiencesList[activeSlide].imgAlt}
+          onLoad={handleImageLoading}
         />
       </div>
       <div className={classes.rightPane}>
