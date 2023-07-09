@@ -2,7 +2,7 @@
   display: flex;
   height: 100vh;
   flex-direction: column;
-  animation: slide 0.8s ease-in-out;
+  animation: slide 1.5s ease-in-out;
 }
 
 @keyframes slide {
@@ -36,6 +36,15 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transition: box-shadow 0.5s ease-in-out;
   transition: transform 0.5s ease;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
 }
 
 .splitScreen .leftPane img:hover {
@@ -74,6 +83,16 @@
   border-radius: 10px;
   margin: 10px;
   height: 80%;
+  animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 td {
@@ -93,6 +112,7 @@ td {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   border: 0.5px solid #bdbcbc;
   object-fit: contain;
+  animation: flip 1s ease;
 }
 
 .position {
