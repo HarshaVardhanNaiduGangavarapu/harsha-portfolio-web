@@ -6,8 +6,15 @@ import InstaButton from "./buttons/InstaButton";
 import ResumeButton from "./buttons/ResumeButton";
 import CoverLetterButton from "./buttons/CoverLetterButton";
 import DownArrow from "../resources/down-arrow-circle.svg";
+import { useState } from "react";
 
 const Home = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handleImageLoading = () => {
+    setIsLoading(false);
+  };
+
   return (
     <div className={classes.bgImg}>
       <div className={classes.splitScreen}>
@@ -42,7 +49,12 @@ const Home = () => {
         </div>
         <div className={classes.rightPane}>
           <div className={classes.profileImage}>
-            <img src={profileImage} alt="profile pic" />
+            {isLoading && <div className={classes.spinner}></div>}
+            <img
+              src={profileImage}
+              alt="profile pic"
+              onLoad={handleImageLoading}
+            />
           </div>
         </div>
       </div>
